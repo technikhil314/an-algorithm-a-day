@@ -1,0 +1,7 @@
+{
+    "entryPoints": [
+        "sort/bubble.ts",
+        "./utils.ts"
+    ],
+    "out": "docs"
+}

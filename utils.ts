@@ -1,6 +1,9 @@
 type RandomArrayGeneratorInput = {
   size: number;
 };
+/**
+ * @param min  Comment for parameter ´text´.
+ */
 function getRandomNumber(min: number, max: number): number {
   return Math.random() * (max - min) + min;
 }
