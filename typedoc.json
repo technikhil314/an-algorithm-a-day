@@ -1,7 +1,8 @@
 {
     "entryPoints": [
-        "sort/bubble.ts",
-        "./utils.ts"
+        "./sort",
+        "./problems"
     ],
+    "entryPointStrategy": "expand",
     "out": "docs"
 }

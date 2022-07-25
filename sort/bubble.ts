@@ -14,3 +14,5 @@ export default function performBubbleSort() {
   }
   console.log({ output: input });
 }
+
+performBubbleSort();
