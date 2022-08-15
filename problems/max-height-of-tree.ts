@@ -15,19 +15,16 @@ root.left.left.left = getTreeNode(5);
 root.left.left.right = getTreeNode(15);
 root.left.right.left = getTreeNode(25);
 root.left.right.right = getTreeNode(35);
-let queue: Array<TreeNode<number>> = [];
 
-function binaryTreeLevelTraversal() {
-  while (queue.length > 0) {
-    const root = queue.shift() as TreeNode<number>;
-    console.log(root.value);
-    if (root.left) {
-      queue.push(root.left);
-    }
-    if (root.right) {
-      queue.push(root.right);
-    }
+function findMaxHeightOfTree(root: TreeNode<number>) {
+  if (!root) {
+    return -1;
   }
+  const leftSubTreeHeight: number =
+    1 + findMaxHeightOfTree(root.left as TreeNode<number>);
+  const rightSubTreeHeight: number =
+    1 + findMaxHeightOfTree(root.right as TreeNode<number>);
+  return Math.max(leftSubTreeHeight, rightSubTreeHeight);
 }
-queue.unshift(root);
-binaryTreeLevelTraversal();
+
+console.log(findMaxHeightOfTree(root));
