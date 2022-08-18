@@ -20,6 +20,7 @@ let queue: Array<TreeNode<number>> = [];
 function binaryTreeLevelTraversal() {
   while (queue.length > 0) {
     const root = queue.shift() as TreeNode<number>;
+    console.log("queue", queue.map((x) => x.value).join(" "), root.value);
     console.log(root.value);
     if (root.left) {
       queue.push(root.left);
