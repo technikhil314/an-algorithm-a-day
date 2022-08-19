@@ -13,6 +13,8 @@ This is a project for my personal relearning of algorithms and data structures u
 
 ### Pre requisites
 
+Basic understanding of DS algo
+
 #### Concepts you should be aware of
 
 1. Knowledge of nodejs
